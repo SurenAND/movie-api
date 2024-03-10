@@ -41,6 +41,11 @@ function renderMovies(rawData) {
       const img = document.createElement("img");
       img.src = `${movie.poster}`;
       img.alt = `${movie.title}`;
+      movieImage.append(img);
+
+      // create movie info
+      const movieInfo = document.createElement("div");
+      movieInfo.classList.add("flex", "flex-col", "justify-start", "p-4");
     });
   }
 }
