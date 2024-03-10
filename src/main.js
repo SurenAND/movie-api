@@ -58,6 +58,11 @@ function renderMovies(rawData) {
       movieCategory.classList.add("text-xs", "text-neutral-300", "mb-4");
       movieCategory.innerText = `Category : ${movie.genres}`;
       movieInfo.append(movieCategory);
+
+      // movie country
+      const movieCountry = document.createElement("p");
+      movieCountry.innerText = `Country : ${movie.country}`;
+      movieInfo.append(movieCountry);
     });
   }
 }
