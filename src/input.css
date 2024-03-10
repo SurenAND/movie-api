@@ -8,4 +8,26 @@
   * {
     font-family: "Figtree";
   }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3061e6;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4481f2;
+  }
 }

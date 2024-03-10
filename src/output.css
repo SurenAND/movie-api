@@ -550,6 +550,32 @@ video {
   font-family: "Figtree";
 }
 
+/* width */
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #3061e6;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4481f2;
+}
+
 .pointer-events-none{
   pointer-events: none;
 }
@@ -565,10 +591,6 @@ video {
 .inset-y-0{
   top: 0px;
   bottom: 0px;
-}
-
-.start-0{
-  inset-inline-start: 0px;
 }
 
 .bottom-2{
@@ -587,6 +609,18 @@ video {
   inset-inline-end: 0.625rem;
 }
 
+.start-0{
+  inset-inline-start: 0px;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .block{
   display: block;
 }
@@ -599,16 +633,32 @@ video {
   height: 25%;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .h-2\/3{
   height: 66.666667%;
 }
 
+.h-36{
+  height: 9rem;
+}
+
 .h-4{
   height: 1rem;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.w-3\/5{
+  width: 60%;
+}
+
+.w-36{
+  width: 9rem;
+}
+
+.w-4{
+  width: 1rem;
 }
 
 .w-full{
@@ -617,14 +667,6 @@ video {
 
 .w-screen{
   width: 100vw;
-}
-
-.w-3\/5{
-  width: 60%;
-}
-
-.w-4{
-  width: 1rem;
 }
 
 .cursor-pointer{
@@ -639,6 +681,10 @@ video {
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -649,6 +695,10 @@ video {
 
 .self-center{
   align-self: center;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .overflow-y-auto{
@@ -671,29 +721,14 @@ video {
   border-top-width: 2px;
 }
 
-.border-gray-600{
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
-}
-
 .border-blue-500{
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
-.bg-mygray{
-  --tw-bg-opacity: 1;
-  background-color: rgb(200 214 229 / var(--tw-bg-opacity));
-}
-
-.bg-myblack{
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 24 / var(--tw-bg-opacity));
-}
-
-.bg-gray-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+.border-gray-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
 .bg-blue-600{
@@ -701,12 +736,27 @@ video {
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
-.p-5{
-  padding: 1.25rem;
+.bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-myblack{
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 24 / var(--tw-bg-opacity));
+}
+
+.bg-mygray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(200 214 229 / var(--tw-bg-opacity));
 }
 
 .p-4{
   padding: 1rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .p-6{
@@ -723,16 +773,20 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.ps-3{
-  padding-inline-start: 0.75rem;
-}
-
 .ps-10{
   padding-inline-start: 2.5rem;
 }
 
+.ps-3{
+  padding-inline-start: 0.75rem;
+}
+
 .pt-4{
   padding-top: 1rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -753,6 +807,20 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-black{
+  font-weight: 900;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -771,6 +839,11 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.text-neutral-300{
+  --tw-text-opacity: 1;
+  color: rgb(212 212 212 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -786,9 +859,9 @@ video {
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
 }
 
-.shadow-\[0px_0px-40px\]{
-  --tw-shadow: 0px 0px-40px;
-  --tw-shadow-colored: 0px 0px-40px var(--tw-shadow-color);
+.shadow-\[0px_0px_40px\]{
+  --tw-shadow: 0px 0px 40px;
+  --tw-shadow-colored: 0px 0px 40px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -826,6 +899,20 @@ video {
 .focus\:ring-blue-800:focus{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
+}
+
+@media (min-width: 640px){
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
+  .sm\:items-start{
+    align-items: flex-start;
+  }
+
+  .sm\:text-left{
+    text-align: left;
+  }
 }
 
 @media (prefers-color-scheme: dark){
