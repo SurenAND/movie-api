@@ -1,3 +1,8 @@
+// render on load
+window.addEventListener("DOMContentLoaded", () => {
+  fetchData("https://moviesapi.ir/api/v1/movies?page=", 1);
+});
+
 async function fetchData(fetchApi, endpoint = "") {
   const fetchToApi = await fetch(`${fetchApi}${endpoint}`);
   const res = await fetchToApi.json();
