@@ -73,6 +73,9 @@ function renderMovies(rawData) {
       const movieImdb = document.createElement("p");
       movieImdb.innerText = `IMDB : ${movie.imdb_rating}`;
       movieInfo.append(movieImdb);
+
+      movieCard.append(movieImage, movieInfo);
+      movieSection.append(movieCard);
     });
   }
 }
