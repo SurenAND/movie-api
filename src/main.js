@@ -34,6 +34,13 @@ function renderMovies(rawData) {
         "text-white",
         "p-4"
       );
+
+      // create movie image
+      const movieImage = document.createElement("div");
+      movieImage.classList.add("w-36", "h-36", "rounded-lg", "overflow-hidden");
+      const img = document.createElement("img");
+      img.src = `${movie.poster}`;
+      img.alt = `${movie.title}`;
     });
   }
 }
