@@ -52,6 +52,12 @@ function renderMovies(rawData) {
       movieTitle.classList.add("text-xl", "font-medium", "mb-1");
       movieTitle.innerText = `${movie.title}`;
       movieInfo.append(movieTitle);
+
+      // movie category
+      const movieCategory = document.createElement("p");
+      movieCategory.classList.add("text-xs", "text-neutral-300", "mb-4");
+      movieCategory.innerText = `Category : ${movie.genres}`;
+      movieInfo.append(movieCategory);
     });
   }
 }
