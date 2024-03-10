@@ -3,6 +3,16 @@ window.addEventListener("DOMContentLoaded", () => {
   fetchData("https://moviesapi.ir/api/v1/movies?page=", 1);
 });
 
+// search
+const form = document.getElementById("search");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const searchInput = e.target.querySelector("input");
+  const searchValue = searchInput.value;
+  searchInput.value = "";
+  fetchData("https://moviesapi.ir/api/v1/movies?q=", searchValue);
+});
+
 async function fetchData(fetchApi, endpoint = "") {
   const fetchToApi = await fetch(`${fetchApi}${endpoint}`);
   const res = await fetchToApi.json();
