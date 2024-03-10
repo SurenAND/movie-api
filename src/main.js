@@ -94,3 +94,21 @@ function renderMovies(rawData) {
     });
   }
 }
+
+// pagination
+let currentPage = 1;
+// prev page
+const prevPage = document.getElementById("prev");
+prevPage.addEventListener("click", () => {
+  if (currentPage !== 1) {
+    fetchData("https://moviesapi.ir/api/v1/movies?page=", --currentPage);
+  }
+});
+
+// next page
+const nextPage = document.getElementById("next");
+nextPage.addEventListener("click", () => {
+  if (currentPage !== 25) {
+    fetchData("https://moviesapi.ir/api/v1/movies?page=", ++currentPage);
+  }
+});
