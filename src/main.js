@@ -7,4 +7,6 @@ async function fetchData(fetchApi, endpoint = "") {
 function renderMovies(rawData) {
   const { data } = rawData;
   // clear movies section
+  const movieSection = document.getElementById("movies");
+  movieSection.innerHTML = "";
 }
