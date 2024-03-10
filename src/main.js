@@ -68,6 +68,11 @@ function renderMovies(rawData) {
       const movieYear = document.createElement("p");
       movieYear.innerText = `Year : ${movie.year}`;
       movieInfo.append(movieYear);
+
+      // movie imdb
+      const movieImdb = document.createElement("p");
+      movieImdb.innerText = `IMDB : ${movie.imdb_rating}`;
+      movieInfo.append(movieImdb);
     });
   }
 }
