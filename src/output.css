@@ -627,6 +627,10 @@ video {
   width: 1rem;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -725,6 +729,10 @@ video {
 
 .ps-10{
   padding-inline-start: 2.5rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-center{
