@@ -46,6 +46,12 @@ function renderMovies(rawData) {
       // create movie info
       const movieInfo = document.createElement("div");
       movieInfo.classList.add("flex", "flex-col", "justify-start", "p-4");
+
+      // movie title
+      const movieTitle = document.createElement("h5");
+      movieTitle.classList.add("text-xl", "font-medium", "mb-1");
+      movieTitle.innerText = `${movie.title}`;
+      movieInfo.append(movieTitle);
     });
   }
 }
