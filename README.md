@@ -1,6 +1,6 @@
 This is a Movie web with [`API`](https://moviesapi.ir/) project with [`Tailwindcss`](https://tailwindcss.com/).
 
-![OUTPUT]()
+![Movie API](https://github.com/SurenAND/movie-api/blob/main/movie-api.jpg)
 
 ## Getting Started
 
