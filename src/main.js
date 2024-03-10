@@ -63,6 +63,11 @@ function renderMovies(rawData) {
       const movieCountry = document.createElement("p");
       movieCountry.innerText = `Country : ${movie.country}`;
       movieInfo.append(movieCountry);
+
+      // movie year
+      const movieYear = document.createElement("p");
+      movieYear.innerText = `Year : ${movie.year}`;
+      movieInfo.append(movieYear);
     });
   }
 }
